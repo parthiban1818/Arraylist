@@ -59,7 +59,7 @@ public class Display {
 			System.out.println("ID\t:"+((Pojo) p1).getId()+"\nNAME\t:"+((Pojo) p1).getName()+"\nGENDER\t:"+((Pojo) p1).getGender()+"\nMOBILE\t:"+((Pojo) p1).getMobile()+"\nMAIL ID\t:"+((Pojo) p1).getMail()+"\n");
 		}
 	}
-	//sort some portion in student details
+	//sort  student details by name
 	public static void sort() {
 		Comparator<Pojo> compare = Comparator.comparing(Pojo::getName); 
 		Collections.sort(Insert.al,compare);
